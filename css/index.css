@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Oswald:500&display=swap");
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.W100 {
+  width: 100%;
+}
+
+.W1160 {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.W570 {
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.W770 {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f21 {
+  font-size: 21px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.f_pink {
+  color: #ecbfbf;
+}
+
+.f_grey {
+  color: #999;
+}
+
+.f_white {
+  color: #fff;
+}
+
+.bg_pink {
+  background-color: #ffb2ba;
+}
+
+.t_left {
+  text-align: left;
+}
+
+.t_right {
+  text-align: right;
+}
+
+.poA {
+  position: absolute;
+}
+
+.poF {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+}
+
+.title h3 {
+}
+
+.section {
+  padding: 40px 0 50px;
+}
+
+.img_wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.img_wrapper * {
+  color: #fff;
+}
+
+.img_wrapper img {
+  width: 100%;
+}
+
+.img_wrapper h6 {
+}
