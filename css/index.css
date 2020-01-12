@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Oswald:500&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
 
 body {
   font-family: "Noto Sans TC", sans-serif;
@@ -8,6 +16,11 @@ img {
 }
 .W100 {
   width: 100%;
+}
+
+.W33 {
+  width: 33.333%;
+  float: left;
 }
 
 .W1160 {
@@ -30,6 +43,7 @@ img {
 
 .f16 {
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .f18 {
@@ -72,6 +86,10 @@ img {
   text-align: right;
 }
 
+.t_center {
+  text-align: center;
+}
+
 .poA {
   position: absolute;
 }
@@ -84,15 +102,28 @@ img {
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
+.cust_content {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title {
   position: relative;
-  display: inline-block;
-  text-align: right;
+  display: block;
   line-height: 1;
-  margin-bottom: 50px;
+  line-height: 1.4;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  vertical-align: top;
 }
 
 .title h2 {
+  font-weight: bold;
 }
 
 .title h3 {
@@ -104,16 +135,166 @@ img {
 
 .img_wrapper {
   position: relative;
-  margin-bottom: 30px;
-}
-
-.img_wrapper * {
-  color: #fff;
+  margin-bottom: 15px;
 }
 
 .img_wrapper img {
   width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fadfd1;
 }
 
-.img_wrapper h6 {
+.list_divi3 {
+  display: inline-block;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.list_divi3 .W33 {
+  padding: 0 15px 20px;
+}
+
+.list_divi3 .W33 p {
+  padding: 0 0 10px;
+}
+
+.list_row > div {
+  padding: 20px 15px;
+  border-bottom: solid 1px #979797;
+  cursor: pointer;
+}
+
+.list_row .f16 {
+  padding-bottom: 5px;
+}
+
+.list_row .f16 .f_pink {
+  padding-left: 10px;
+}
+
+.pages {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.pages li {
+  border: 1px solid #e5e5e5;
+  width: 40px;
+  line-height: 35px;
+  display: inline-block;
+  margin: 0 3px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pages li.active {
+  border: 1px solid #ffb2ba;
+  background-color: #ffb2ba;
+  color: #fff;
+  cursor: default;
+}
+
+/* 關於rossi    */
+.abt .title {
+  margin-bottom: -10px;
+  margin-top: 0;
+}
+
+.abt .title:before,
+.abt .title:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: #979797;
+  margin: 10px auto;
+}
+
+.abt h6 {
+  padding: 30px 0;
+}
+
+.abt .slogan {
+  margin: 60px auto 20px;
+}
+
+/* 專欄 */
+.blog .W33 {
+  height: 400px;
+}
+
+/* 新聞 */
+.news {
+  margin-top: 50px;
+}
+.news .title {
+  width: 240px;
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+}
+.news .list_row {
+  width: calc(100% - 240px);
+  padding-left: 40px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 769px) {
+  .pages li:not(.active):hover {
+    background-color: rgba(151, 151, 151, 0.1);
+  }
+  .list_row > div:hover {
+    background-color: rgba(151, 151, 151, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .W33 {
+    width: 50%;
+  }
+  .news .title {
+    width: 100%;
+    margin-top: 20px;
+    float: none;
+    text-align: center;
+  }
+  .news .list_row {
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .W33 {
+    width: 100%;
+  }
+  .f16 {
+    font-size: 14px;
+  }
+
+  .f18 {
+    font-size: 16px;
+  }
+
+  .f21 {
+    font-size: 19px;
+  }
+
+  .f24 {
+    font-size: 21px;
+  }
+
+  .f36 {
+    font-size: 29px;
+  }
+  .blog .W33 {
+    height: initial;
+  }
 }
