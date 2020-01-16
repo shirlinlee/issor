@@ -1,11 +1,383 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Oswald:500&display=swap");
+
+
+/* 修改泛用顯示字體，如果有沒抓到的額外設定，不要 !important 全部，不然會吃掉特殊字元變成方塊 */
+*,
+.navbar-menu ul li a.nav-dropdown-toggle,
+#leftCol > div > div > p.global-primary.dark-primary.section-title,
+body
+  > div.body-wrapper
+  > div.body-content.mobile-revamp-navigation
+  > div
+  > div
+  > div
+  > h1,
+body
+  > div.body-wrapper
+  > div.body-content.mobile-revamp-navigation
+  > div
+  > div
+  > div
+  > p,
+body
+  > div.body-wrapper
+  > div.body-content.mobile-revamp-navigation
+  > div
+  > div
+  > div
+  > h2 {
+  font-family: "Microsoft JhengHei";
+}
+
+/* 產品頁描述寬度 - 電腦版 */
+.ProductDetail-description,
+.Post-content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 調整手機版 navbar 子項目寬度免得換行 */
+body
+  > nav.NavigationBar.mod-mobile.js-navbar-mobile.nav-bg-color.hidden-lg
+  > div
+  > ul {
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  body
+    > nav.NavigationBar.mod-mobile.js-navbar-mobile.nav-bg-color.hidden-lg
+    > div.NavigationBar-container.clearfix
+    > ul.NavigationBar-actionMenu.nav-color.pull-right
+    > li:nth-child(-n + 3) {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* 結帳流程段落標題明確化 */
+#checkout-container > div > div > div > div > section > div.section-header > h3,
+#checkout-container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > section
+  > div.section-header
+  > h3,
+#checkout-container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > section
+  > div.section-header
+  > h3 {
+  font-weight: bold;
+}
+
+#checkout-container > div > div > div > div > section > div.section-header,
+#checkout-container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > section
+  > div.section-header,
+#checkout-container
+  > div
+  > div
+  > div
+  > div
+  > div
+  > section
+  > div.section-header {
+  background-color: #d3d3d3;
+}
+
+/* 調整 banner 位置免得擋到 */
+#Content > div.CustomPage > div:nth-child(1) {
+  margin-top: 140px;
+}
+@media (max-width: 600px) {
+  #Content > div.CustomPage > div:nth-child(1) {
+    margin-top: 60px;
+  }
+}
+
+/* 修改泛用字體大小 */
+p {
+  font-size: 16px;
+}
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
+  border-style: none;
+}
+
+/*結帳頁面的必勾選選項視覺強化*/
+#checkout-container
+  > div
+  > div
+  > div
+  > div.panel.panel-place-order
+  > div.panel-body
+  > form
+  > div:nth-child(1)
+  > label
+  > input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+#checkout-container
+  > div
+  > div
+  > div
+  > div.panel.panel-place-order
+  > div.panel-body
+  > form
+  > div:nth-child(1)
+  > label {
+  font-size: 17px;
+  font-weight: bold;
+  color: red !important;
+}
+#checkout-container
+  > div
+  > div
+  > div
+  > div.panel.panel-place-order
+  > div.panel-body
+  > form
+  > div:nth-child(1)
+  > label
+  > a {
+  font-size: 17px;
+}
+#checkout-container
+  > div
+  > div
+  > div
+  > div.panel.panel-place-order
+  > div.panel-body
+  > form
+  > div:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+/* 結帳頁面「提交訂單」按鈕改大 */
+a.btn.btn-success.btn-block.btn-place-order.pull-right.ladda-button,
+#checkout-container
+  > div
+  > div.cart-content
+  > div.row
+  > div.col-sm-5.col-md-4
+  > section
+  > div.section-body
+  > a {
+  font-size: 22px;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+  /* 購物車按鈕強化 */
+  #Content
+    > div
+    > div.block-inner
+    > div
+    > div:nth-child(2)
+    > div
+    > div.ProductDetail-product-info.col-xs-12.col-md-6.js-sticky-cart-button-container
+    > div.btn-cart-fixed.js-btn-cart-fixed.active,
+  #btn-add-to-cart {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  /* 產品頁描述寬度 - 手機版 */
+  .ProductDetail-description,
+  .Post-content {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 將「前往結帳」按鈕變為下方常駐 */
+  #checkout-container
+    > div
+    > div
+    > div
+    > div.cart-content
+    > div.row
+    > div.col-sm-5.col-md-4
+    > section
+    > div.section-body
+    > a {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+    z-index: 9999;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+/* 修改 checkout 頁面「會員」勾選字樣*/
+#checkout-container
+  > div
+  > div
+  > div
+  > div.panel.panel-place-order
+  > div.panel-body
+  > form
+  > div:nth-child(2)
+  > label::after {
+  content: "享 500 元生日禮";
+}
+
+/* 醫師評價 */
+.doctor-feedback {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+}
+.doctor-portrait-container {
+  margin: auto;
+  padding: 0 10px 0 0;
+}
+.doctor-portrait {
+  border-radius: 50%;
+}
+.doctor-comment-container {
+  width: 45%;
+}
+.doctor-comment {
+  line-height: 2;
+}
+@media (max-width: 600px) {
+  .doctor-feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .doctor-portrait-container {
+    text-align: center;
+  }
+  .doctor-portrait {
+    border-radius: 50%;
+  }
+  .doctor-comment-container {
+    width: 100%;
+  }
+}
+
+/* 隱藏掉不必要的部落格分享按鈕 */
+.share-box {
+  display: none;
+}
+
+/* 部落格左右推薦延伸閱讀 */
+.blog-left-article {
+  max-width: 45%;
+  float: left;
+  font-size: 24px;
+}
+.blog-right-article {
+  max-width: 45%;
+  float: right;
+  font-size: 24px;
+}
+@media (max-width: 600px) {
+  .blog-left-article {
+    max-width: 49%;
+    float: left;
+    font-size: 16px;
+  }
+  .blog-right-article {
+    max-width: 49%;
+    float: right;
+    font-size: 16px;
+  }
+}
+
+/* 部落格下方產品呈現 */
+.blog-items-custom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.blog-single-item-container {
+  width: 24%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-item-image-container {
+  margin-bottom: 10px;
+}
+.blog-item-image {
+  max-width: 100%;
+}
+.blog-item-name,
+.blog-item-price {
+  text-align: center;
+  line-height: 1.5;
+}
+.blog-single-item-container > a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .blog-single-item-container {
+    width: 49%;
+    margin: auto;
+  }
+}
+
+/* Q&A 設計*/
+.test-qa-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.test-qa-q {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
+  border-left: 4px solid red;
+  background-color: #dddddd;
+}
+.test-qa-a {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
+  border-left: 4px solid #999999;
+  background-color: #ffffff;
+}
+
+/* 留言板的寬度調整 */
+.fb-comments {
+  width: 100%;
+}
+
+.cust_content h1,
+.cust_content h2,
+.cust_content h3,
+.cust_content h4,
+.cust_content h5,
+.cust_content h6 {
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body {
@@ -52,10 +424,12 @@ img {
 
 .f21 {
   font-size: 21px;
+  line-height: 1.5;
 }
 
 .f24 {
   font-size: 24px;
+  line-height: inherit;
 }
 
 .f36 {
@@ -107,9 +481,13 @@ img {
 }
 
 .cust_content {
-  width: 92%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bread {
+  padding: 20px 0;
 }
 
 .title {
@@ -124,9 +502,13 @@ img {
 
 .title h2 {
   font-weight: bold;
+  padding: 0;
+  line-height: 1;
 }
 
 .title h3 {
+  padding: 10px 0 0;
+  line-height: 1;
 }
 
 .section {
@@ -155,13 +537,15 @@ img {
 
 .list_divi3 .W33 {
   padding: 0 15px 20px;
+  display: block;
 }
 
 .list_divi3 .W33 p {
   padding: 0 0 10px;
 }
 
-.list_row > div {
+.list_row > .W100 {
+  display: block;
   padding: 20px 15px;
   border-bottom: solid 1px #979797;
   cursor: pointer;
@@ -175,12 +559,12 @@ img {
   padding-left: 10px;
 }
 
-.pages {
+.pages_ {
   margin: 50px auto;
   text-align: center;
 }
 
-.pages li {
+.pages_ li {
   border: 1px solid #e5e5e5;
   width: 40px;
   line-height: 35px;
@@ -191,65 +575,18 @@ img {
   cursor: pointer;
 }
 
-.pages li.active {
+.pages_ li.active {
   border: 1px solid #ffb2ba;
   background-color: #ffb2ba;
   color: #fff;
   cursor: default;
 }
 
-/* 關於rossi    */
-.abt .title {
-  margin-bottom: -10px;
-  margin-top: 0;
-}
-
-.abt .title:before,
-.abt .title:after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  background-color: #979797;
-  margin: 10px auto;
-}
-
-.abt h6 {
-  padding: 30px 0;
-}
-
-.abt .slogan {
-  margin: 60px auto 20px;
-}
-
-/* 專欄 */
-.blog .W33 {
-  height: 400px;
-}
-
-/* 新聞 */
-.news {
-  margin-top: 50px;
-}
-.news .title {
-  width: 240px;
-  display: inline-block;
-  margin-top: 20px;
-  float: left;
-}
-.news .list_row {
-  width: calc(100% - 240px);
-  padding-left: 40px;
-  display: inline-block;
-  float: left;
-  margin-bottom: 100px;
-}
-
 @media (min-width: 769px) {
-  .pages li:not(.active):hover {
+  .pages_ li:not(.active):hover {
     background-color: rgba(151, 151, 151, 0.1);
   }
-  .list_row > div:hover {
+  .list_row > .W100:hover {
     background-color: rgba(151, 151, 151, 0.1);
   }
 }
@@ -257,17 +594,6 @@ img {
 @media (max-width: 768px) {
   .W33 {
     width: 50%;
-  }
-  .news .title {
-    width: 100%;
-    margin-top: 20px;
-    float: none;
-    text-align: center;
-  }
-  .news .list_row {
-    width: 100%;
-    padding-left: 0;
-    float: none;
   }
 }
 
@@ -293,8 +619,5 @@ img {
 
   .f36 {
     font-size: 29px;
-  }
-  .blog .W33 {
-    height: initial;
   }
 }
