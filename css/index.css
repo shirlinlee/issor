@@ -373,6 +373,11 @@ a.btn.btn-success.btn-block.btn-place-order.pull-right.ladda-button,
   background-color: #f8f8f8;
 }
 
+#Footer .Footer-grids {
+  width: 100%;
+  max-width: 1160px;
+}
+
 #Footer .container:first-child {
   border: none;
 }
@@ -479,6 +484,11 @@ img {
 
 .f_b.Gelasio {
   font-weight: 700 !important;
+}
+
+.f14 {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .f16 {
@@ -705,6 +715,9 @@ div.img_bg {
 @media (max-width: 768px) {
   .W33 {
     width: 50%;
+  }
+  .f13 {
+    font-size: 13px;
   }
   .f16 {
     font-size: 14px;
