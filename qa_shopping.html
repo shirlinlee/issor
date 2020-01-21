@@ -418,140 +418,144 @@
             </div>
         </div>
     </div>
-    <style type="text/css">/* reset */
+    <style type="text/css">
+        /* reset */
         #Content > div.CustomPage > div:nth-child(1) {
-            margin-top: 0;
+          margin-top: 0;
         }
         .Grid-row,
         .Grid-row .Grid-item {
-            margin: 0;
-            padding: 0;
+          margin: 0;
+          padding: 0;
         }
         /* 關於rossi    */
         .qa .title {
-            margin-bottom: -10px;
-            margin-top: -10px;
+          margin-bottom: -10px;
+          margin-top: -10px;
         }
-
+  
         .qa .title:before,
         .qa .title:after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 90px;
-            background-color: #979797;
-            margin: 10px auto;
+          content: "";
+          display: block;
+          width: 1px;
+          height: 90px;
+          background-color: #979797;
+          margin: 10px auto;
         }
-
+  
         .qa_cat a {
-            display: inline-block;
-            width: 17%;
-            padding-top: 17%;
-            margin: 15px .8% 0;
-            position: relative;
-            background-color: #e7d0ca;
-            transition: all .3s;
+          display: inline-block;
+          width: 17%;
+          padding-top: 17%;
+          margin: 15px .8% 0;
+          position: relative;
+          background-color: #e7d0ca;
+          transition: all .3s;
         }
-
+  
         .qa-h2 {
-            padding: 5px 0px 10px 0px;
-        }
-
+            padding: 5px 0px 5px 0px;
+            letter-spacing: normal;
+          }
+  
         .qa-h3 {
-            padding: 15px 0;
+            padding: 5px 0px 5px 0px;
         }
-
+  
         .qa h6 {
-            top: 50%;
-            left: 0;
-            transform: translate(0, -50%);
-            display: block;
-            width: 100%;
-            line-height: 1.2;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          display: block;
+          width: 100%;
         }
         .qa-pair-container {
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-        }
-
+          padding: 3px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          }
+  
         .qa-q {
-            font-size: 20px;
-            margin: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 40px;
-            border-left: 4px solid red;
-            background-color: #dddddd;
-            position: relative;
+          font-size: 17px;
+          color: #E97C95;
+          line-height: 30px;
+          margin: 0px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-left: 4px solid #E97C95;
+          background-color: #ffffff;
         }
         .qa-a {
-            margin: 0 0 20px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 30px;
-            border-left: 4px solid #999999;
-            background-color: #ffffff;
-            height: 0;
-            overflow: hidden;
+          font-size: 14px;
+          line-height: 28px;
+          margin: 0 0 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-left: 4px solid #dedede;
+          background-color: #ffffff;
+          height: 0;
+          overflow: hidden;
         }
         .switch {
-            position: absolute;
-            right: 10px;
-            top: 13px;
-            width: 50px;
-            height: 35px;
-            -webkit-appearance: none;
-            background-image: url(https://img.shoplineapp.com/media/image_clips/5e2541c90cbc9f0036181cb8/original.png?1579499977);
-            background-size: 20px;
-            background-repeat: no-repeat;
-            background-position: center;
-            transition: all .3s;
-            cursor: pointer;
-            margin: 0 !important;
-        }
-        .switch:focus {
+          position: absolute;
+          right: 10px;
+          top: 13px;
+          width: 50px;
+          height: 35px;
+          -webkit-appearance: none;
+          background-image: url(https://img.shoplineapp.com/media/image_clips/5e2541c90cbc9f0036181cb8/original.png?1579499977);
+          background-size: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: all .3s;
+          cursor: pointer;
+          margin: 0 !important;
+          }
+          .switch:focus {
             outline: none !important;
-        } 
-        .switch:checked {
+          } 
+          .switch:checked {
             transform: rotate(-180deg);
-        }
-        .switch:checked + .qa-a {
+          }
+          .switch:checked + .qa-a {
             height: initial;
-        }
+          }
         @media (min-width: 769px) {
-        .qa_cat a:hover {
-            background-color: rgb(228, 198, 190);
-            color: #fff;
-        }
+          .qa_cat a:hover {
+              background-color: rgb(228, 198, 190);
+              color: #fff;
+          }
         }
         @media (max-width: 768px) {
-        .qa_cat a {
-            width: 170px;
-            padding-top: 170px;
-            margin: 15px 7.5px 0;
-        }
+          .qa_cat a {
+              width: 170px;
+              padding-top: 170px;
+              margin: 15px 7.5px 0;
+          }
         }
         @media (max-width: 599px) {
-        .qa_cat a {
-            width: 100px;
-            padding-top: 100px;
-            margin: 8px 2px 0;
-        }
-        .f24 {
-            font-size: 19px;
-        }
-        .qa-h3 {
-            padding: 15px 0 8px;
-        }
-        .qa-a {
-            margin: 0 0 10px;
-        }
+          .qa_cat a {
+              width: 100px;
+              padding-top: 100px;
+              margin: 8px 2px 0;
+          }
+          .f24 {
+              font-size: 19px;
+          }
+          .qa-h3 {
+              padding: 15px 0 8px;
+          }
+          .qa-a {
+              margin: 0 0 10px;
+          }
         }
     </style>
-  </body>
+  
+
+</body>
 </html>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
