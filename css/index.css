@@ -493,7 +493,7 @@ img {
 
 .f16 {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.6 !important;
 }
 
 .f18 {
@@ -676,6 +676,7 @@ div.img_bg {
 .list_divi4 .W25 {
   padding: 0 7.5px 0;
   display: block;
+  text-decoration: none;
 }
 
 .list_divi3 {
