@@ -740,8 +740,8 @@ div.img_bg {
   cursor: default;
 }
 
-.product {
-  padding: 0 20px;
+.product ul{
+  padding-left: 0;
 }
 
 @media (min-width: 769px) {
@@ -753,6 +753,9 @@ div.img_bg {
   }
   .btn_:hover {
     background-color: rgba(151, 151, 151, 0.1);
+  }
+  a:hover, a:focus {
+    color: #E97C96 !important;
   }
 }
 
@@ -812,4 +815,6 @@ div.img_bg {
   .f36 {
     font-size: 25px;
   }
+
+  
 }

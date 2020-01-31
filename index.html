@@ -13,17 +13,20 @@
   <body>
 
     <div class="cust_content index t_center">
-        <div class="W1160 sec1 flex"><img alt="" class="W50 flex" src="https://img.shoplineapp.com/media/image_clips/5e32561ec7d6e7003c71e3f8/original.jpg?1580357148" />
-        <div class="W50 flex">
-        <div class="t_right poA">
-        <h3 class="f36 Gelasio f_b">less burden,<br />
-        most care</h3>
+        <div class="W1160 sec1 flex">
+            <div class="W50 flex">
+                <img alt="" src="https://img.shoplineapp.com/media/image_clips/5e32561ec7d6e7003c71e3f8/original.jpg?1580357148" />
+            </div>
+            <div class="W50 flex">
+                <div class="t_right poA">
+                <h3 class="f36 Gelasio f_b">less burden,<br />
+                most care</h3>
         
-        <p class="f21">皮膚炎藥師親自為敏弱肌設計，<br />
-        無添加物不刺激皮膚，<br />
-        嬰幼兒、孕婦、癌症病患皆可使用。 <span class="W100" style="display: block;">No Animal Experiment<br />
-        Vegetarian Available </span></p>
-        <a class="btn_" href="#">more</a></div>
+            <p class="f21">皮膚炎藥師親自為敏弱肌設計，<br />
+            無添加物不刺激皮膚，<br />
+            嬰幼兒、孕婦、癌症病患皆可使用。 <span class="W100" style="display: block;">No Animal Experiment<br />
+            Vegetarian Available </span></p>
+            <a class="btn_" href="#">more</a></div>
         </div>
         </div>
         
@@ -53,13 +56,13 @@
         </div>
         
         <div class="W1160 sec3 W100">
-        <div class="W33"><img alt="" src="https://img.shoplineapp.com/media/image_clips/5e2272eb35e157265119dce8/original.jpg" />
+        <div class="W33"><img alt="" src="https://img.shoplineapp.com/media/image_clips/5e32561d596dfe097bc7bfc2/original.jpg?1580357148" />
         <h5 class="f36 Gelasio f_b">animal friendly</h5>
         
         <h6 class="f21">動物友善，拒絕實驗</h6>
         </div>
         
-        <div class="W67"><img alt="" src="https://img.shoplineapp.com/media/image_clips/5e2272eb62d3f62ae70779b8/original.jpg" />
+        <div class="W67"><img alt="" src="https://img.shoplineapp.com/media/image_clips/5e32561e5dfc45002a8766e5/original.jpg?1580357149" />
         <h5 class="f36 Gelasio f_b">care for the earth</h5>
         
         <h6 class="f21">愛護地球，環保包裝</h6>
@@ -79,7 +82,12 @@
             .Grid-row-wrapper {
                 width: 100% !important;
             }
+
+            
             /*  首頁    */
+            body.home.index {
+                margin-top: 180px;
+            }
             .index {
                 margin-top: 100px;
             }
@@ -88,6 +96,7 @@
             .sec2,
             .sec3 {
                 margin-bottom: 50px;
+                overflow: hidden;
             }
             .sec1 span.W100 {
                 margin-top: 20px;
@@ -97,8 +106,9 @@
                 position: relative;
             }
     
-            .sec1 img.W50 {
-                width: calc(50% - 7.5px);
+            .sec1 .W50 img {
+                width: calc(100% - 7.5px);
+                align-self: baseline;
             }
     
             .sec1 .btn_ {
@@ -108,6 +118,7 @@
             .sec1 .t_right {
                 top: 50%;
                 right: 0;
+                padding-right: 20px;
                 transform: translate(0, -50%);
             }
 
@@ -145,6 +156,9 @@
             @media (min-width: 769px) {
             }
             @media (max-width: 768px) {
+            body.home.index {
+                margin-top: 60px;
+            }
             .index {
                 margin-top: 70px;
             }
@@ -166,6 +180,13 @@
             .index {
                 margin-top: 40px;
             }
+            .sec1,
+            .sec2,
+            .sec3 {
+                padding-left:20px ;
+                padding-right:20px ;
+
+            }
             .sec1 {
                 flex-direction: column;
             }
@@ -178,17 +199,19 @@
                 width: 100% !important;
                 height: auto !important;
             }
-            .sec1 img.W50 {
+            .sec1 .W50 img {
                 width: 100%;
             }
             .sec1 .t_right {
                 position: relative;
                 top: 0;
+                padding: 0;
                 transform: none;
                 width: 100%;
                 margin-top: 20px;
                 text-align: center;
             }
+            
             }
     </style>
         
