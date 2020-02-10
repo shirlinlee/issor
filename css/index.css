@@ -34,6 +34,14 @@ body
   margin-right: auto;
 }
 
+body.posts.show .Post .Post-content * {
+  line-height: 1.6;
+}
+
+body.posts.show .Post h1 {
+  letter-spacing: 0;
+}
+
 /* 調整手機版 navbar 子項目寬度免得換行 */
 body
   > nav.NavigationBar.mod-mobile.js-navbar-mobile.nav-bg-color.hidden-lg
@@ -740,7 +748,7 @@ div.img_bg {
   cursor: default;
 }
 
-.product ul{
+.product ul {
   padding-left: 0;
 }
 
@@ -754,8 +762,9 @@ div.img_bg {
   .btn_:hover {
     background-color: rgba(151, 151, 151, 0.1);
   }
-  a:hover, a:focus {
-    color: #E97C96 !important;
+  a:hover,
+  a:focus {
+    color: #e97c96 !important;
   }
 }
 
@@ -815,6 +824,4 @@ div.img_bg {
   .f36 {
     font-size: 25px;
   }
-
-  
 }
